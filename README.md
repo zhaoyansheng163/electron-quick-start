@@ -43,3 +43,17 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 ## License
 
 [CC0 1.0 (Public Domain)](LICENSE.md)
+
+
+
+打包参考：electron 完整项目构建过程
+
+<https://blog.csdn.net/changhuzhao/article/details/78684967>
+
+注意：打包报错的话，注意需要修改 electron-version 的版本号，改为最新版
+
+"scripts": {
+
+    "start": "electron .",
+    "package":"electron-packager . helloworld --platform=win32 --arch=x64 --electron-version=1.0.0 --overwrite --ignore=node_modules --ignore=.gitignore"
+  },
